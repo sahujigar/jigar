@@ -1,0 +1,94 @@
+li{ 
+    padding: 15px;
+    font-size: small;
+    float: right;
+    background-color: black;
+    color: azure;
+    margin: 10px;
+}
+
+.container1{
+    max-width: 1500px;
+    color: black;
+    background-color: grey;
+}
+li:hover{
+        color: black;
+        background: white;
+}
+.un1{
+    
+    list-style: none;
+    padding: 15px;
+    margin: 0%;
+}
+
+div{
+    align-content: center;
+}
+ul{ padding-right: 25px;
+    float: right;
+    list-style-type: none;
+}
+/* .navbar{
+    overflow: hidden;
+
+} */
+
+.container{
+    width: 1500px;
+}
+.view{
+    float: left;
+}
+.anime{
+    padding-left: 20px;
+    width: 20%;
+
+}
+.subcontainer.div1{
+    padding: 25px;
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+.subcontainer.div2{
+    padding: 25px;
+    text-align: left;
+    float: right;
+    width: 50%;
+}
+.button{
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.image1o1{
+    height: 100px ;
+    width: 100px ; 
+    float: left; 
+    padding-left: 25px;
+}
+
+.baseLine{
+    text-align: center;
+    /* color: white; */
+    background-color: black;
+}
+.baseLineText{
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.baseLine img{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}

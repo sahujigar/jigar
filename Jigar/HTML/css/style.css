@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.backimg img{
+display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    
+}
+
+.he1{
+    color: rgb(240, 2, 2);
+}
+
+.mail img{
+    width: 15px;
+height: 15px;
+margin: auto;
+}
+
+
+
+.container{
+   max-width: 1200px;
+   margin: auto;
+}
+
+.Card2 img{
+    float: left;
+    width: 25%;
+    margin: 20px;
+
+}
+
+
+
+.Card{
+    padding: 15px;
+    padding-right: 20px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: rgb(107, 107, 160);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Card h1{
+    margin-bottom: 5px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Card :hover {
+    color: white;
+    background-image: url(https://www.w3schools.com/css/img_forest.jpg);
+}
+
+.Card2{
+    padding: 15px;
+    padding-right: 20px;
+    width: 50%;
+    float: left;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Card2 small{
+    color:rgb(227, 17, 17);
+    font-family: 'Times New Roman', Times, serif;
+}
+.clearfix{
+    clear: both;
+}
