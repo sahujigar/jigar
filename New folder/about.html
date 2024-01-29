@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    < id="display">
-        <h1 id="intunameh1"></h1>
-        <h2 id="Joiningh2"></h2>
-        <h3 id="timingh3"></h3>
+  <id="display">
+    <h1 id="intunameh1"></h1>
+    <h2 id="Joiningh2"></h2>
+    <h3 id="timingh3"></h3>
 
 
-        <button id="One" onclick="addd();">525</button> <br>
-        <button id="MUK" onclick="kk();">2*2</button> <br>
-        <button id="SUB" onclick="SS();">50-20</button> <br>
-        <button id="DUB" onclick="BB();">500/20</button> <br>
-<input type="number" id="myinput">
-<button id="number" onclick="CC()";> Check </button>
+    <button id="One" onclick="addd();">525</button> <br>
+    <button id="MUK" onclick="kk();">2*2</button> <br>
+    <button id="SUB" onclick="SS();">50-20</button> <br>
+    <button id="DUB" onclick="BB();">500/20</button> <br>
+    <input type="number" id="myinput">
+    <button id="number" onclick="CC()" ;> Check </button>
+
+
+    <br>
+
+    <div id="4number"></div>
+    <br>
+
+    <div id="Star"></div>
+    <br>
+
+    <div id="Reead" onclick="readMore();"></div>
 
 
 
@@ -27,41 +40,86 @@
       let intuname = "Weltec";
       let Joining = "18/02/23";
       let timing = "8AM to 9AM";
-       
-      
 
-      document.getElementById("intunameh1").innerHTML= intuname;
-      document.getElementById("Joiningh2").innerHTML= Joining;
-      document.getElementById("timingh3").innerHTML= timing;
-      
+
+
+      document.getElementById("intunameh1").innerHTML = intuname;
+      document.getElementById("Joiningh2").innerHTML = Joining;
+      document.getElementById("timingh3").innerHTML = timing;
+
       var onev = 1;
-      function addd()
-      {       
-        onev=onev+1
-        return document.getElementById("One").innerHTML= onev;
+      function addd() {
+        onev = onev + 1
+        return document.getElementById("One").innerHTML = onev;
       }
 
-      
 
-      function kk()
-      {       
-        return document.getElementById("MUK").innerHTML= 2*2;
+
+      function kk() {
+        return document.getElementById("MUK").innerHTML = 2 * 2;
       }
       var sub = 50;
-      function SS()
-      {       
-        return document.getElementById("SUB").innerHTML= sub-20;
+      function SS() {
+        return document.getElementById("SUB").innerHTML = sub - 20;
       }
       var dub = 500;
-      function BB()
-      {       
-        return document.getElementById("DUB").innerHTML= dub/20;
+      function BB() {
+        return document.getElementById("DUB").innerHTML = dub / 20;
       }
 
+      //this number task 
 
-     
+      let knumber = "";
+      for (let i = 4; i >= 1; i--) {
+        for (let j = i; j >= 1; j--) {
+          knumber += j;
+        }
+        knumber += "<br>";
+      }
+      document.getElementById("4number").innerHTML = knumber;
+
+      //next task stars in triangular 
+
+      let stras1 = "";
+      for (let i = 1; i <= 4; i++) 
+      {
+        for (let k = 4; k > i; k--)
+        {
+          stras1 += "&nbsp;";
+        }
+        for (let j = 1; j <= i; j++) 
+        {
+          stras1 += "*&nbsp;";
+          stras1 += "<br>";
+        }
+      }
+        document.getElementById("Star").innerHTML = stras1;
+
+
+//read more and readless task
+
+        let some = "Good paragraphs begin with a topic sentence that briefly explains what the paragraph is about. Next come a few sentences for development and support, elaborating on the topic with more detail. Paragraphs end with a conclusion sentence that summarizes the topic or presents one final piece of support to wrap up"
+        let isreadMore = true;
+        function readMore() 
+        {
+          if (isreadMore == true) 
+          {
+            document.getElementById("Reead").innerHTML = some.slice(0,20) + "..readMore";
+          }
+          else
+          {
+            document.getElementById("Reead").innerHTML = some.slice + "..readless";
+          }
+
+          isreadMore = !isreadMore;
+        }
+        readMore();
 
 
     </script>
+
+
+
 </body>
+
 </html>
